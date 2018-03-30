@@ -9,6 +9,10 @@
     "cache": "D:\\2Demo\\egg-example\\node_modules\\egg-view\\config\\config.local.js",
     "defaultExtension": "D:\\2Demo\\egg-example\\node_modules\\egg-view\\config\\config.default.js"
   },
+  "news": {
+    "pageSize": "D:\\2Demo\\egg-example\\config\\config.default.js",
+    "serverUrl": "D:\\2Demo\\egg-example\\config\\config.default.js"
+  },
   "session": {
     "maxAge": "D:\\2Demo\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
     "key": "D:\\2Demo\\egg-example\\node_modules\\egg-session\\config\\config.default.js",
@@ -159,7 +163,8 @@
     "license": "D:\\2Demo\\egg-example\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
       "egg": "D:\\2Demo\\egg-example\\node_modules\\egg\\config\\config.default.js",
-      "egg-view-nunjucks": "D:\\2Demo\\egg-example\\node_modules\\egg\\config\\config.default.js"
+      "egg-view-nunjucks": "D:\\2Demo\\egg-example\\node_modules\\egg\\config\\config.default.js",
+      "moment": "D:\\2Demo\\egg-example\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
       "egg-bin": "D:\\2Demo\\egg-example\\node_modules\\egg\\config\\config.default.js"

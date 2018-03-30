@@ -195,7 +195,8 @@
       "license": "ISC",
       "dependencies": {
         "egg": "^2.5.0",
-        "egg-view-nunjucks": "^2.2.0"
+        "egg-view-nunjucks": "^2.2.0",
+        "moment": "^2.21.0"
       },
       "devDependencies": {
         "egg-bin": "^4.5.0"
@@ -298,6 +299,18 @@
     "clusterClient": {
       "responseTimeout": 60000
     },
+    "news": {
+      "pageSize": 5,
+      "serverUrl": "https://hacker-news.firebaseio.com/v0"
+    },
+    "middleware": [
+      "robot"
+    ],
+    "robot": {
+      "ua": [
+        {}
+      ]
+    },
     "coreMiddlewares": [
       "meta",
       "siteFile",
@@ -309,8 +322,12 @@
       "securities",
       "i18n"
     ],
-    "appMiddlewares": [],
-    "appMiddleware": [],
+    "appMiddlewares": [
+      "robot"
+    ],
+    "appMiddleware": [
+      "robot"
+    ],
     "multipartParseOptions": {
       "autoFields": false,
       "defCharset": "utf8",

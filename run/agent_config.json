@@ -163,7 +163,8 @@
       "license": "ISC",
       "dependencies": {
         "egg": "^2.5.0",
-        "egg-view-nunjucks": "^2.2.0"
+        "egg-view-nunjucks": "^2.2.0",
+        "moment": "^2.21.0"
       },
       "devDependencies": {
         "egg-bin": "^4.5.0"
@@ -260,6 +261,10 @@
     },
     "clusterClient": {
       "responseTimeout": 60000
+    },
+    "news": {
+      "pageSize": 5,
+      "serverUrl": "https://hacker-news.firebaseio.com/v0"
     },
     "coreMiddlewares": [
       "meta",

@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "egg-bin test",
     "dev": "egg-bin dev"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "egg": "^2.5.0",
-    "egg-view-nunjucks": "^2.2.0"
+    "egg-view-nunjucks": "^2.2.0",
+    "moment": "^2.21.0"
   },
   "devDependencies": {
-    "egg-bin": "^4.5.0"
+    "egg-bin": "^4.5.0",
+    "egg-mock": "^3.16.0"
   }
 }
