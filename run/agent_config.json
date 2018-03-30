@@ -132,8 +132,17 @@
       "root": "D:\\2Demo\\egg-example\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
-      "defaultViewEngine": "",
-      "mapping": {}
+      "defaultViewEngine": "nunjucks",
+      "mapping": {
+        ".tpl": "nunjucks"
+      }
+    },
+    "nunjucks": {
+      "autoescape": true,
+      "throwOnUndefined": false,
+      "trimBlocks": false,
+      "lstripBlocks": false,
+      "cache": false
     },
     "env": "local",
     "name": "egg-example",
@@ -153,7 +162,8 @@
       "author": "",
       "license": "ISC",
       "dependencies": {
-        "egg": "^2.5.0"
+        "egg": "^2.5.0",
+        "egg-view-nunjucks": "^2.2.0"
       },
       "devDependencies": {
         "egg-bin": "^4.5.0"
@@ -405,6 +415,20 @@
       "from": "D:\\2Demo\\egg-example\\node_modules\\egg\\config\\plugin.js",
       "path": "D:\\2Demo\\egg-example\\node_modules\\egg-view",
       "version": "2.1.0"
+    },
+    "nunjucks": {
+      "enable": true,
+      "package": "egg-view-nunjucks",
+      "name": "nunjucks",
+      "dependencies": [
+        "security",
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\2Demo\\egg-example\\config\\plugin.js",
+      "path": "D:\\2Demo\\egg-example\\node_modules\\egg-view-nunjucks",
+      "version": "2.2.0"
     }
   }
 }
